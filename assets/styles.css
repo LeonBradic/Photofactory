@@ -10,7 +10,9 @@ body {
     padding: 0;
     overflow-y: hidden;
     background-color: #e5e5e5;
-    position: relative
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 p {
@@ -65,7 +67,6 @@ p {
 
 .container {
     max-height: 100vh;
-    overflow: scroll;
     scroll-snap-type: y mandatory;
 }
 
