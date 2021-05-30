@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="icon" href="assets/images/icon.png">
+    <title>PHOTOFACTORY</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script>
+        $(window).on("load",function(){
+        $(".loader-wrapper").delay(750).fadeOut(300);
+        });
+    </script>
+    <div class="container">
+        <div class="section" id="home">
+            <div class="absoluteTop">
+                <div class="topLeft">
+                    <h1>
+                        PHOTOFACTORY
+                    </h1>
+                </div>
+                <div class="topRight">
+                    <nav>
+                        <ul>
+                            <a href="#home"><li>HOME</li></a>
+                            <a href="#projects"><li>PROJECTS</li></a>
+                            <a href="#about"><li>ABOUT</li></a>
+                            <a href="#contact"><li>CONTACT</li></a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="topMid">
+                <p class="topPhotofactory">WE ARE PHOTOFACTORY</p>
+                <h1>FACTORY THAT MAKES YOUR <br>
+                    PHOTOGRAPHIC DREAMS COME TRUE
+                </h1>
+                <a href="#projects"><button>DISCOVER MORE</button></a>
+            </div>
+        </div>
+        <div class="section" id="projects">
+            <div class="projectsTop">
+                <p>PROJECTS</p>
+            </div>
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radioButton" id="radio1">
+                    <input type="radio" name="radioButton" id="radio2">
+                    <input type="radio" name="radioButton" id="radio3">
+                    <input type="radio" name="radioButton" id="radio4">
+                    <input type="radio" name="radioButton" id="radio5">
+                    <input type="radio" name="radioButton" id="radio6">
+                    <input type="radio" name="radioButton" id="radio7">
+                    <input type="radio" name="radioButton" id="radio8">
+                    <input type="radio" name="radioButton" id="radio9">
+                    <div class="slide first">
+                        <img src="assets/images/slider1.svg" alt="slide1">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/slider2.svg" alt="slide2">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/slider3.svg" alt="slide3">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/slider4.svg" alt="slide4">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/slider5.svg" alt="slide5">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/slider6.svg" alt="slide6">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/slider7.svg" alt="slide7">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/slider8.svg" alt="slide8">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/slider9.svg" alt="slide9">
+                    </div>
+                    <div class="navigationAuto">
+                        <div class="autoButton1"></div>
+                        <div class="autoButton2"></div>
+                        <div class="autoButton3"></div>
+                        <div class="autoButton4"></div>
+                        <div class="autoButton5"></div>
+                        <div class="autoButton6"></div>
+                        <div class="autoButton7"></div>
+                        <div class="autoButton8"></div>
+                        <div class="autoButton9"></div>
+                    </div>
+                </div>
+                <div class="navigationManual">
+                    <label for="radio1" class="manualButton"></label>
+                    <label for="radio2" class="manualButton"></label>
+                    <label for="radio3" class="manualButton"></label>
+                    <label for="radio4" class="manualButton"></label>
+                    <label for="radio5" class="manualButton"></label>
+                    <label for="radio6" class="manualButton"></label>
+                    <label for="radio7" class="manualButton"></label>
+                    <label for="radio8" class="manualButton"></label>
+                    <label for="radio9" class="manualButton"></label>
+                </div>
+            </div>
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function(){
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if(counter > 9) {
+                        counter = 1;
+                    }
+                }, 5000);
+            </script>
+            <div class="galery">
+                <div class="row1">
+                    <img src="assets/images/slider1.svg" alt="slider1">
+                    <img src="assets/images/slider2.svg" alt="slider2" class="rowGalery">
+                    <img src="assets/images/slider3.svg" alt="slider3" class="rowGalery">
+                </div>
+                <div class="row2">
+                    <img src="assets/images/slider4.svg" alt="slider4">
+                    <img src="assets/images/slider5.svg" alt="slider5" class="rowGalery">
+                    <img src="assets/images/slider6.svg" alt="slider6" class="rowGalery">
+                </div>
+                <div class="row3">
+                    <img src="assets/images/slider7.svg" alt="slider7">
+                    <img src="assets/images/slider8.svg" alt="slider8" class="rowGalery">
+                    <img src="assets/images/slider9.svg" alt="slider9" class="rowGalery">
+                </div>
+            </div>
+            <div class="mobileGalery">
+                <img src="assets/images/slider1.svg" alt="slider1">
+                <img src="assets/images/slider2.svg" alt="slider2">
+                <img src="assets/images/slider3.svg" alt="slider3">
+                <img src="assets/images/slider4.svg" alt="slider4">
+                <img src="assets/images/slider5.svg" alt="slider5">
+                <img src="assets/images/slider6.svg" alt="slider6">
+                <img src="assets/images/slider7.svg" alt="slider7">
+                <img src="assets/images/slider8.svg" alt="slider8">
+                <img src="assets/images/slider9.svg" alt="slider9" class="iPhoneXOnlyLOL">
+            </div>
+        </div>
+        <div class="section" id="about">
+            <div class="aboutTop">
+                <P>ABOUT</P>
+            </div>
+            <div class="aboutMid">
+                <div class=aboutLeft>
+                    <img src="assets/images/about1.svg" alt="about1">
+                    <div class="leftParagraphs">
+                        <p class="nature">NATURE</p>
+                        <p class="leftText">
+                            Lorem ipsum dolor sit amet, <br>
+                            consectetur adipiscing elit. <br>
+                            Suspendisse suscipit at lacus <br> id laoreet. </p>
+                    </div>
+                </div>
+                <div class="aboutCenter">
+                    <img src="assets/images/about2.svg" alt="about2">
+                    <div class="centerParagraphs">
+                        <p class="vehicles">VEHICLES</p>
+                        <p class="centerText">
+                            Lorem ipsum dolor sit amet, <br>
+                            consectetur adipiscing elit. <br>
+                            Suspendisse suscipit at lacus <br> id laoreet. </p>
+                    </div>
+                </div>
+                <div class="aboutRight">
+                    <img src="assets/images/about3.svg" alt="about3">
+                    <div class="rightParagraphs">
+                        <p class="architecture">ARCHITECTURE</p>
+                        <p class="rightText">
+                            Lorem ipsum dolor sit amet, <br>
+                            consectetur adipiscing elit. <br>
+                            Suspendisse suscipit at lacus <br> id laoreet. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutBottomResponsive">
+                <h1>PHOTOFACTORY is:</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Praesent nec ornare metus. 
+                    Cras finibus elit non sapien sollicitudin, 
+                    non vehicula ipsum congue. Quisque faucibus dictum nulla sed sagittis. 
+                    Aenean et nulla ac quam molestie ornare. Donec fringilla diam dui, 
+                    eget egestas purus porta ac. Sed elementum ullamcorper lorem, 
+                    quis fringilla enim tincidunt sed. 
+                    Ut at nibh eu lorem vulputate auctor. 
+                    Donec tempus elit felis, ut dignissim orci eleifend a.
+                     Donec turpis tellus, hendrerit vitae tellus at, laoreet iaculis ex. 
+                     cenas tincidunt ultricies nisl vitae fermentum. 
+                     Fusce condimentum nunc ut risus blandit, et malesuada mauris maximus.
+                     Nunc maximus eget orci sed.
+                     Quisque faucibus dictum nulla sed sagittis. 
+                     Aenean et nulla ac quam molestie ornare. Donec fringilla diam dui, 
+                     eget egestas purus porta ac. Sed elementum ullamcorper lorem, 
+                     quis fringilla enim tincidunt sed. 
+                     Ut at nibh eu lorem vulputate auctor.
+                     Donec turpis tellus, hendrerit vitae tellus at, laoreet iaculis ex. 
+                     cenas tincidunt ultricies nisl vitae fermentum. 
+                     Fusce condimentum nunc ut risus blandit, et malesuada mauris maximus.
+                     Nunc maximus eget orci sed. </p>
+            </div>
+        </div>
+        <div class="section" id="contact">
+            <div class="contactTop">
+                <p>CONTACT</p>
+            </div>
+            <div class="form">
+                <div class="formTop">
+                    <div class="formLeft">
+                        <label for="firstname">Firstname *</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Please enter your firstname" required>
+                        <label for="email">Email *</label>
+                        <input type="text" id="email" name="email" placeholder="Please enter your email" required>
+                    </div>
+                    <div class="formRight">
+                        <label for="lastname" class="lastname">Lastname *</label>
+                        <input type="text" id="lastname" name="lastname" required  placeholder="Please enter your lastname">
+                        <label for="phone" class="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Please enter your phone">
+                    </div>
+                </div>
+                <div class="formBottom">
+                    <label for="message" class="message">Message *</label>
+                    <textarea name="message" id="message" cols="30" rows="10" required  placeholder="Please enter your message"></textarea>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button>SUBMIT</button></a>
+                    <a href="#home" class="backToTheTop"><button>BACK TO THE TOP</button></a>
+                    <p>* These fields are required.</p>
+                </div>
+                <div class="formResponsive">
+                    <label for="firstname">Firstname *</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Please enter your firstname" required>
+                    <label for="lastname" class="lastname">Lastname *</label>
+                    <input type="text" id="lastname" name="lastname" required  placeholder="Please enter your lastname">
+                    <label for="email">Email *</label>
+                    <input type="text" id="email" name="email" placeholder="Please enter your email" required>
+                    <label for="phone" class="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Please enter your phone">
+                    <label for="message" class="message">Message *</label>
+                    <textarea name="message" id="message" cols="30" rows="10" required  placeholder="Please enter your message"></textarea>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button>SUBMIT</button></a>
+                    <a href="#home" class="backToTheTop"><button>BACK TO THE TOP</button></a>
+                    <p>* These fields are required.</p>
+                </div>
+            </div>  
+            <footer>
+                <div class="footerLeft">
+                    <img src="assets/images/footerYoutube.webp" alt="youtube" class="youtube">
+                    <p class="photofactory">PHOTOFACTORY</p><P>on YouTube</P>
+                </div>
+                <div class="footerCenter">
+                    <img src="assets/images/footerInstagram.webp" alt="instagram">
+                    <p class="photofactory">PHOTOFACTORY</p><P>on Instagram</P>
+                </div>
+                <div class="footerRight">
+                    <img src="assets/images/footerFacebook.webp" alt="facebook">
+                    <p class="photofactory">PHOTOFACTORY</p><P>on Facebook</P>
+                </div>
+            </footer>
+            <div class="footerBottom">
+                <p>Copyright 2021</p><p id="photofactory">PHOTOFACTORY</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
