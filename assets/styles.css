@@ -406,6 +406,7 @@ textarea {
     width: 1380px;
     height: 150px;
     font-family: 'Roboto';
+    padding-top: 10px;
 }
 
 .formBottom label {
