@@ -384,7 +384,7 @@ h1, li, .topMid p {
 }
 
 .form input {
-    width: 620px;
+    width: 81%;
     height: 47px;
     margin-bottom: 20px;
 }
@@ -404,7 +404,7 @@ textarea, input {
 }
 
 textarea {
-    width: 1380px;
+    width: 95%;
     height: 150px;
     font-family: 'Roboto';
     padding-top: 10px;
@@ -764,7 +764,7 @@ button:hover {
     }
 
     .form input {
-        width: 530px;
+        width: 90%;
     }
 
     .form label, .form input {
@@ -777,7 +777,7 @@ button:hover {
 
     textarea {
         margin-left: 5%;
-        width: 530px;
+        width: 90%;
         height: 100px;
     }
 
@@ -931,7 +931,7 @@ button:hover {
     }
 
     .form input {
-        width: 400px;
+        width: 90%;
         height: 30px;
     }
 
@@ -945,7 +945,7 @@ button:hover {
 
     textarea {
         margin-left: 3%;
-        width: 400px;
+        width: 90%;
         height: 75px;
     }
 
