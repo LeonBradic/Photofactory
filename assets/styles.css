@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
     overflow-x: hidden;
 }
 
@@ -20,7 +20,7 @@ p {
     font-size: 20px;
 }
 
-.loader-wrapper {
+.loaderWrapper {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -41,7 +41,7 @@ p {
     animation: loader 2s infinite ease;
 }
 
-.loader-inner {
+.loaderInner {
     vertical-align: top;
     display: inline-block;
     width: 100%;
@@ -95,7 +95,8 @@ p {
 .absoluteTop ul {
     display: flex;
     list-style: none;
-    margin: 30px 50px 0 30%;
+    margin: 30px 50px 0 0;
+    float: right;
 }
 
 .topLeft, .topRight {
@@ -160,10 +161,10 @@ h1, li, .topMid p {
 /*---SLIDER---*/
 .slider {
     margin: 0;
-    width: 1282px;
+    width: 66%;
     height: 690px;
     overflow: hidden;
-    margin-left: 15%;
+    margin-left: 17%;
     box-shadow: 1px 1px 10px #000;
 }
 
@@ -499,6 +500,8 @@ button:hover {
     margin-right: 4%;
 }
 
+
+
 @media only screen and (max-width: 1024px) {
     body {
         overflow: hidden;
@@ -511,10 +514,6 @@ button:hover {
 
     .section {
         scroll-snap-align: none;
-    }
-
-    .topRight {
-        margin-right: 15%;
     }
 
     .topRight ul li {
@@ -544,7 +543,7 @@ button:hover {
     }
     
     .slider {
-        width: 700px;
+        width: 68%;
         margin-left: 15%;
         margin-top: 50px;
         height: 390px;
@@ -556,14 +555,14 @@ button:hover {
 
     .galery {
         display: block;
-        width: 1024px;
+        width: 97%;
         height: 1000px;
         margin-top: 75px;
         margin-left: 4%;
     }
 
     .galery img {
-        width: 300px;
+        width: 30%;
         height: auto;
         margin-bottom: 50px;
         box-shadow: 1px 1px 10px #000;
@@ -592,6 +591,7 @@ button:hover {
 
     .aboutBottomResponsive h1 {
         font-size: 50px;
+        text-shadow: none;
     }
 
     .aboutBottomResponsive {
@@ -673,10 +673,14 @@ button:hover {
     }
   }
 
-  @media only screen and (max-width: 768px) {
-    .topRight {
-        margin-right: 20%;
+  @media only screen and (max-width: 900px) {
+    .contactTop{
+        margin-top: 55%;
     }
+  }
+
+
+  @media only screen and (max-width: 768px) {
 
     .topRight ul li {
         font-size: 15px;
@@ -700,14 +704,14 @@ button:hover {
     }
 
     .slider {
-        width: 650px;
+        width: 85%;
         margin-left: 7.5%;
         margin-top: 50px;
         height: 390px;
     }
 
     .galery img {
-        width: 200px;
+        width: 26%;
         margin-bottom: 25px;
         margin-right: 20px;
     }
@@ -715,6 +719,7 @@ button:hover {
     .galery {
         margin-left: 6%;
         margin-top: 50px;
+        width: 100%;
     }
 
     .aboutMid img {
@@ -748,6 +753,10 @@ button:hover {
     .aboutBottomResponsive p {
         font-size: 15px;
         line-height: 25px;
+    }
+
+    .contactTop {
+        margin-top: 0;
     }
 
     .form label {
@@ -809,10 +818,17 @@ button:hover {
     }
 }    
 
+@media only screen and (max-width: 600px) {
+    .topRight ul {
+        margin-top: 30px;
+        margin-right: 0;
+    }
+}
+
 @media only screen and (max-width: 540px) {
     .topRight {
-        margin-left: -10%;
         margin-top: 7px;
+        margin-right: 5%;
     }
 
     .topRight ul li {
@@ -847,7 +863,7 @@ button:hover {
     }
 
     .slider {
-        width: 520px;
+        width: 95%;
         height: 400px;
         margin-left: 2%;
     }
@@ -859,10 +875,11 @@ button:hover {
     .galery {
         display: flex;
         margin-left: 4%;
+        width: 97%;
     }
 
     .galery img {
-        width: 150px;
+        width: 80%;
     }
 
     .aboutMid img {
@@ -904,6 +921,15 @@ button:hover {
         font-size: 10px;
         line-height: 15px;
     }
+
+    .aboutBottomResponsive {
+        margin-bottom: 0;
+    }
+
+    .contactTop {
+        margin-top: -10%;
+    }
+
     .form input {
         width: 400px;
         height: 30px;
@@ -937,8 +963,8 @@ button:hover {
     }
 
     footer {
-        margin-top: -75px;
         height: 75px;
+        margin-top: 0;
     }
 
     .footerCenter, .footerLeft, .footerRight {
@@ -1049,6 +1075,20 @@ button:hover {
     }
 }
 
+@media only screen and (max-width: 394px) {
+    .mobileGalery img {
+        width: 95%;
+    }
+
+    .aboutTop {
+        margin-top: 250%;
+    }
+
+    footer {
+        margin-top: 15%;
+    }
+}
+
 @media only screen and (max-width: 375px) {
     .topMid h1 {
         font-size: 20px;
@@ -1084,7 +1124,7 @@ button:hover {
     }
 
     footer {
-        margin-top: -20px;
+        margin-top: 0;
     }
 
     .footerLeft, .footerCenter, .footerRight {
@@ -1097,5 +1137,15 @@ button:hover {
 
     .footerBottom p {
         font-size: 5px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .mobileGalery img {
+        width: 95%;
+    }
+
+    footer {
+        margin-top: 10%;
     }
 }
